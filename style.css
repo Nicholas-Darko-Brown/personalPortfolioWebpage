@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: pink;
+    box-shadow: 0px 15px 10px -15px #111; 
+    z-index: 2;
+  }
+  
+  #navbar ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  #navbar ul li {
+    list-style: none;
+    padding: 0px 20px;
+  }
+  
+  main {
+    position: relative;
+    padding-top: 40px;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    text-align: center;
+    background: aqua;
+  }
+  
+  #welcome-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 2;
+  }
+  
+  #welcome-container span {
+    font-style: italic;
+  }
+  
+  #projects {
+    background: yellow;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    padding: 30px 0px;
+    text-decoration: underline;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .project-tile {
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    padding-top: 15px;
+  }
+  
+  .project-photo {
+    margin-top: 40px;
+  }
+  
+  .project-title {
+    font-style: italic;
+    border-bottom: 1px solid black;
+  }
+  
+  #contact-container span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #contact-container h3 {
+    text-align: center;
+    padding: 20px 0px;
+  }
+  
+  #github {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  #contact-container {
+    padding-bottom: 20px;
+  }
+  
+  #footer {
+    background: gray;
+    padding: 10px;
+  }
+  
+  
+  /*Media Query */
+  @media (max-width: 768px) {
+    #welcome-container {
+    top: 10%;
+  }
+    
+    .projects-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  }
